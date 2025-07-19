@@ -18,7 +18,7 @@ namespace clib_util
 			endTime = std::chrono::steady_clock::now();
 		}
 
-		[[nodiscard]] std::uint64_t duration_μs() const
+		[[nodiscard]] std::uint64_t duration_us() const
 		{
 			return std::chrono::duration_cast<std::chrono::microseconds>(endTime - startTime).count();
 		}
